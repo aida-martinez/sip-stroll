@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sip & Stroll</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="icon">&#128167;</i> Sip & Stroll <i class="icon">&#128694;</i></h1>
+    
+    <div class="section">
+      <h2>Start Timer</h2>
+      <select id="timerType">
+        <option value="browser">When browser opens</option>
+        <option value="manual">Manual start</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <h2>Reminder Frequency</h2>
+      <div class="reminder-type">
+        <label><i class="icon">&#128167;</i> Water Reminder:</label>
+        <select id="waterFrequency">
+          <option value="30">Every 30 minutes</option>
+          <option value="60">Every hour</option>
+          <option value="120">Every 2 hours</option>
+        </select>
+        <div class="countdown" id="waterCountdown">Next: --:--</div>
+      </div>
+      
+      <div class="reminder-type">
+        <label><i class="icon">&#128694;</i> Walk Reminder:</label>
+        <select id="walkFrequency">
+          <option value="60">Every hour</option>
+          <option value="120">Every 2 hours</option>
+          <option value="180">Every 3 hours</option>
+        </select>
+        <div class="countdown" id="walkCountdown">Next: --:--</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Notification Settings</h2>
+      <div class="toggle">
+        <span class="slider" id="notificationsToggle"></span>
+        Enable Notifications
+      </div>
+    </div>
+
+    <div class="button-group">
+      <button id="startTimer" class="primary-button">Start Reminders <i class="icon">&#10024;</i></button>
+      <div class="secondary-buttons">
+        <button id="pauseTimer" class="secondary-button">Pause <i class="icon">&#128263;</i></button>
+        <button id="resetTimer" class="secondary-button">Reset <i class="icon">&#8635;</i></button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

@@ -1,0 +1,146 @@
+body {
+  width: 320px;
+  padding: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f7ff;
+}
+
+.container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2196F3;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.reminder-type {
+  margin-bottom: 10px;
+}
+
+.reminder-type label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slider {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.slider.active {
+  background-color: #2196F3;
+}
+
+.slider.active:before {
+  transform: translateX(20px);
+}
+
+.primary-button, .secondary-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.primary-button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.secondary-button {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.primary-button:hover {
+  background-color: #1976D2;
+}
+
+.secondary-button:hover {
+  background-color: #bdbdbd;
+}
+
+.icon {
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+.countdown {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 4px;
+  text-align: right;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.secondary-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.secondary-buttons .secondary-button {
+  flex: 1;
+  margin-bottom: 0;
+} 
